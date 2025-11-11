@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Private Diary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-screen">
+    <h2>Enter Password</h2>
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="diary-app" style="display:none;">
+    <header>
+      <h1>My Personal Diary</h1>
+      <button onclick="logout()">Logout</button>
+    </header>
+
+    <main>
+      <section class="new-entry">
+        <textarea id="entry-text" placeholder="Write your thoughts..."></textarea>
+        <button onclick="saveEntry()">Save Entry</button>
+      </section>
+
+      <section id="entries"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
